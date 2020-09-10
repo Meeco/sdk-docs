@@ -96,9 +96,12 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#attachfile" class="tsd-kind-icon">attach<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#create" class="tsd-kind-icon">create</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#directattachmentattach" class="tsd-kind-icon">direct<wbr>Attachment<wbr>Attach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#directattachmentuploadurl" class="tsd-kind-icon">direct<wbr>Attachment<wbr>Upload<wbr>Url</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#downloadattachment" class="tsd-kind-icon">download<wbr>Attachment</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#downloadthumbnail" class="tsd-kind-icon">download<wbr>Thumbnail</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#getdirectattachmentinfo" class="tsd-kind-icon">get<wbr>Direct<wbr>Attachment<wbr>Info</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#list" class="tsd-kind-icon">list</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#removeslot" class="tsd-kind-icon">remove<wbr>Slot</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="itemservice.html#setlogger" class="tsd-kind-icon">set<wbr>Logger</a></li>
@@ -121,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L21">packages/sdk/src/services/item-service.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L31">packages/sdk/src/services/item-service.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -150,7 +153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L125">packages/sdk/src/services/item-service.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L135">packages/sdk/src/services/item-service.ts:135</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -176,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L57">packages/sdk/src/services/item-service.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L67">packages/sdk/src/services/item-service.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -196,6 +199,58 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="directattachmentattach" class="tsd-anchor"></a>
+					<h3>direct<wbr>Attachment<wbr>Attach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">direct<wbr>Attachment<wbr>Attach<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IDirectAttachmentAttachData</span>, auth<span class="tsd-signature-symbol">: </span><a href="authdata.html" class="tsd-signature-type">AuthData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CreateAttachmentResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L242">packages/sdk/src/services/item-service.ts:242</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <span class="tsd-signature-type">IDirectAttachmentAttachData</span></h5>
+								</li>
+								<li>
+									<h5>auth: <a href="authdata.html" class="tsd-signature-type">AuthData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CreateAttachmentResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="directattachmentuploadurl" class="tsd-anchor"></a>
+					<h3>direct<wbr>Attachment<wbr>Upload<wbr>Url</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">direct<wbr>Attachment<wbr>Upload<wbr>Url<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IDirectAttachmentUploadUrlData</span>, auth<span class="tsd-signature-symbol">: </span><a href="authdata.html" class="tsd-signature-type">AuthData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AttachmentDirectUploadUrlResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L203">packages/sdk/src/services/item-service.ts:203</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <span class="tsd-signature-type">IDirectAttachmentUploadUrlData</span></h5>
+								</li>
+								<li>
+									<h5>auth: <a href="authdata.html" class="tsd-signature-type">AuthData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AttachmentDirectUploadUrlResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="downloadattachment" class="tsd-anchor"></a>
 					<h3>download<wbr>Attachment</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -205,7 +260,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L207">packages/sdk/src/services/item-service.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L272">packages/sdk/src/services/item-service.ts:272</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -234,7 +289,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L219">packages/sdk/src/services/item-service.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L284">packages/sdk/src/services/item-service.ts:284</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -263,7 +318,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L237">packages/sdk/src/services/item-service.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L302">packages/sdk/src/services/item-service.ts:302</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -283,6 +338,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdirectattachmentinfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Direct<wbr>Attachment<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Direct<wbr>Attachment<wbr>Info<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>attachmentId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span>, auth<span class="tsd-signature-symbol">: </span><a href="authdata.html" class="tsd-signature-type">AuthData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L226">packages/sdk/src/services/item-service.ts:226</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <span class="tsd-signature-symbol">{ </span>attachmentId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>attachment<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>auth: <a href="authdata.html" class="tsd-signature-type">AuthData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="list" class="tsd-anchor"></a>
 					<h3>list</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -292,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L263">packages/sdk/src/services/item-service.ts:263</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L328">packages/sdk/src/services/item-service.ts:328</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -315,7 +401,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L231">packages/sdk/src/services/item-service.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L296">packages/sdk/src/services/item-service.ts:296</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -341,7 +427,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L53">packages/sdk/src/services/item-service.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L63">packages/sdk/src/services/item-service.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -364,7 +450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L71">packages/sdk/src/services/item-service.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L81">packages/sdk/src/services/item-service.ts:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -393,7 +479,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/6142c0d/packages/sdk/src/services/item-service.ts#L30">packages/sdk/src/services/item-service.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/afa2dcb/packages/sdk/src/services/item-service.ts#L40">packages/sdk/src/services/item-service.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -453,6 +539,12 @@
 								<a href="itemservice.html#create" class="tsd-kind-icon">create</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="itemservice.html#directattachmentattach" class="tsd-kind-icon">direct<wbr>Attachment<wbr>Attach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="itemservice.html#directattachmentuploadurl" class="tsd-kind-icon">direct<wbr>Attachment<wbr>Upload<wbr>Url</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="itemservice.html#downloadattachment" class="tsd-kind-icon">download<wbr>Attachment</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -460,6 +552,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="itemservice.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="itemservice.html#getdirectattachmentinfo" class="tsd-kind-icon">get<wbr>Direct<wbr>Attachment<wbr>Info</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="itemservice.html#list" class="tsd-kind-icon">list</a>
