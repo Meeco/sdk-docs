@@ -148,7 +148,14 @@ configureFetch(fetchPolyfill);
 				<a href="#loggers" id="loggers" style="color: inherit; text-decoration: none;">
 					<h3>Loggers</h3>
 				</a>
-				<p>Most services allow a logger to be configured. The default for this is a no-op function (<code>() =&gt; {}</code>). If you would like to log message to the console, you can pass in <code>console.log</code> as the logger. You can pass in any function that takes strings as an argument (for exmaple, if you want to update a progress bar message).</p>
+				<p>Most services allow a logger to be configured. The default for this is a no-op function (<code>() =&gt; {}</code>). If you would like to log message to the console, you can pass in <code>console.log</code> as the logger. You can pass in any function that takes strings as an argument (for example, if you want to update a progress bar message).</p>
+				<p>To log warnings or errors you can pass loggers like so</p>
+				<pre><code class="language-javascript">{
+ <span class="hljs-attr">error</span>: errorLogFunc,
+ <span class="hljs-attr">warn</span>: warnLogFunc,
+ <span class="hljs-attr">log</span>: baseLogFunc,
+}</code></pre>
+				<p>where each of the logging functions takes a string to print.</p>
 				<a href="#api-factories" id="api-factories" style="color: inherit; text-decoration: none;">
 					<h3>API Factories</h3>
 				</a>
