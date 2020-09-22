@@ -96,6 +96,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="shareservice.html#acceptincomingshare" class="tsd-kind-icon">accept<wbr>Incoming<wbr>Share</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="shareservice.html#convertslotstoencryptedvaluesforshare" class="tsd-kind-icon">convert<wbr>Slots<wbr>ToEncrypted<wbr>Values<wbr>For<wbr>Share</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="shareservice.html#deleteshareditem" class="tsd-kind-icon">delete<wbr>Shared<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="shareservice.html#getshareditemincoming" class="tsd-kind-icon">get<wbr>Shared<wbr>Item<wbr>Incoming</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="shareservice.html#listshares" class="tsd-kind-icon">list<wbr>Shares</a></li>
@@ -120,7 +121,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/share-service.ts#L45">packages/sdk/src/services/share-service.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L45">packages/sdk/src/services/share-service.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -149,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/share-service.ts#L110">packages/sdk/src/services/share-service.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L110">packages/sdk/src/services/share-service.ts:110</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -166,6 +167,40 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="convertslotstoencryptedvaluesforshare" class="tsd-anchor"></a>
+					<h3>convert<wbr>Slots<wbr>ToEncrypted<wbr>Values<wbr>For<wbr>Share</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Slots<wbr>ToEncrypted<wbr>Values<wbr>For<wbr>Share<span class="tsd-signature-symbol">(</span>slots<span class="tsd-signature-symbol">: </span><a href="../globals.html#decryptedslot" class="tsd-signature-type">DecryptedSlot</a><span class="tsd-signature-symbol">[]</span>, sharedDataEncryptionKey<span class="tsd-signature-symbol">: </span><a href="encryptionkey.html" class="tsd-signature-type">EncryptionKey</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EncryptedSlotValue</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L331">packages/sdk/src/services/share-service.ts:331</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>In the API: a share expects an <code>encrypted_value</code> property.
+										For a tile item - this is a stringified json payload of key/value
+										pairs where the key is the slot id and the value is the slot value
+									encrypted with a shared data encryption key.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>slots: <a href="../globals.html#decryptedslot" class="tsd-signature-type">DecryptedSlot</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>sharedDataEncryptionKey: <a href="encryptionkey.html" class="tsd-signature-type">EncryptionKey</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EncryptedSlotValue</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="deleteshareditem" class="tsd-anchor"></a>
 					<h3>delete<wbr>Shared<wbr>Item</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -175,7 +210,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/share-service.ts#L121">packages/sdk/src/services/share-service.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L121">packages/sdk/src/services/share-service.ts:121</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -201,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/share-service.ts#L132">packages/sdk/src/services/share-service.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L132">packages/sdk/src/services/share-service.ts:132</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -227,7 +262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/share-service.ts#L98">packages/sdk/src/services/share-service.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L98">packages/sdk/src/services/share-service.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -253,7 +288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/share-service.ts#L65">packages/sdk/src/services/share-service.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L65">packages/sdk/src/services/share-service.ts:65</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -276,7 +311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/share-service.ts#L69">packages/sdk/src/services/share-service.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L69">packages/sdk/src/services/share-service.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -308,7 +343,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/share-service.ts#L230">packages/sdk/src/services/share-service.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L230">packages/sdk/src/services/share-service.ts:230</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -334,7 +369,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/share-service.ts#L61">packages/sdk/src/services/share-service.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/9863da5/packages/sdk/src/services/share-service.ts#L61">packages/sdk/src/services/share-service.ts:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -372,6 +407,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="shareservice.html#acceptincomingshare" class="tsd-kind-icon">accept<wbr>Incoming<wbr>Share</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="shareservice.html#convertslotstoencryptedvaluesforshare" class="tsd-kind-icon">convert<wbr>Slots<wbr>ToEncrypted<wbr>Values<wbr>For<wbr>Share</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="shareservice.html#deleteshareditem" class="tsd-kind-icon">delete<wbr>Shared<wbr>Item</a>
