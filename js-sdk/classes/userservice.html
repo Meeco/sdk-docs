@@ -102,8 +102,13 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#create" class="tsd-kind-icon">create</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#createkeystoretoken" class="tsd-kind-icon">create<wbr>Keystore<wbr>Token</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#deletesessiontokens" class="tsd-kind-icon">delete<wbr>Session<wbr>Tokens</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#generateusername" class="tsd-kind-icon">generate<wbr>Username</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#getauthdata" class="tsd-kind-icon">get<wbr>Auth<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#getorcreatevaulttoken" class="tsd-kind-icon">get<wbr>OrCreate<wbr>Vault<wbr>Token</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#getuser" class="tsd-kind-icon">get<wbr>User</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#getvaultuser" class="tsd-kind-icon">get<wbr>Vault<wbr>User</a></li>
 							</ul>
 						</section>
@@ -122,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/b0b6136/packages/sdk/src/services/user-service.ts#L29">packages/sdk/src/services/user-service.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L29">packages/sdk/src/services/user-service.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -147,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">vault<wbr>Keypair<wbr>External<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/b0b6136/packages/sdk/src/services/user-service.ts#L21">packages/sdk/src/services/user-service.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L21">packages/sdk/src/services/user-service.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -157,7 +162,7 @@
 					<div class="tsd-signature tsd-kind-icon">VAULT_<wbr>PAIR_<wbr>EXTERNAL_<wbr>IDENTIFIER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;auth&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/b0b6136/packages/sdk/src/services/user-service.ts#L20">packages/sdk/src/services/user-service.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L20">packages/sdk/src/services/user-service.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -174,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/b0b6136/packages/sdk/src/services/user-service.ts#L219">packages/sdk/src/services/user-service.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L219">packages/sdk/src/services/user-service.ts:219</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,6 +201,70 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createkeystoretoken" class="tsd-anchor"></a>
+					<h3>create<wbr>Keystore<wbr>Token</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Keystore<wbr>Token<span class="tsd-signature-symbol">(</span>userPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L372">packages/sdk/src/services/user-service.ts:372</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a Keystore token for the user.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>userPassword: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>secret: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="deletesessiontokens" class="tsd-anchor"></a>
+					<h3>delete<wbr>Session<wbr>Tokens</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Session<wbr>Tokens<span class="tsd-signature-symbol">(</span>vaultToken<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, keystoreToken<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L423">packages/sdk/src/services/user-service.ts:423</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invalidate all of the provided tokens.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> vaultToken: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> keystoreToken: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="generateusername" class="tsd-anchor"></a>
 					<h3>generate<wbr>Username</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -205,7 +274,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/b0b6136/packages/sdk/src/services/user-service.ts#L207">packages/sdk/src/services/user-service.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L207">packages/sdk/src/services/user-service.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -233,7 +302,40 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/b0b6136/packages/sdk/src/services/user-service.ts#L319">packages/sdk/src/services/user-service.ts:319</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L319">packages/sdk/src/services/user-service.ts:319</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>use <a href="userservice.html#getauthdata">getAuthData</a> instead.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>userPassword: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>secret: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="authdata.html" class="tsd-signature-type">AuthData</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getauthdata" class="tsd-anchor"></a>
+					<h3>get<wbr>Auth<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Auth<wbr>Data<span class="tsd-signature-symbol">(</span>userPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="authdata.html" class="tsd-signature-type">AuthData</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L326">packages/sdk/src/services/user-service.ts:326</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -255,6 +357,62 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getorcreatevaulttoken" class="tsd-anchor"></a>
+					<h3>get<wbr>OrCreate<wbr>Vault<wbr>Token</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>OrCreate<wbr>Vault<wbr>Token<span class="tsd-signature-symbol">(</span>userPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L383">packages/sdk/src/services/user-service.ts:383</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new Vault session or get the token for an existing session.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>userPassword: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>secret: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getuser" class="tsd-anchor"></a>
+					<h3>get<wbr>User</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>User<span class="tsd-signature-symbol">(</span>vaultAccessToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MeResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L416">packages/sdk/src/services/user-service.ts:416</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vaultAccessToken: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MeResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getvaultuser" class="tsd-anchor"></a>
 					<h3>get<wbr>Vault<wbr>User</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -264,13 +422,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/b0b6136/packages/sdk/src/services/user-service.ts#L360">packages/sdk/src/services/user-service.ts:360</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f463e14/packages/sdk/src/services/user-service.ts#L412">packages/sdk/src/services/user-service.ts:412</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>Use <a href="userservice.html#getuser">getUser</a> instead.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>vaultAccessToken: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MeResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -307,10 +474,25 @@
 								<a href="userservice.html#create" class="tsd-kind-icon">create</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="userservice.html#createkeystoretoken" class="tsd-kind-icon">create<wbr>Keystore<wbr>Token</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="userservice.html#deletesessiontokens" class="tsd-kind-icon">delete<wbr>Session<wbr>Tokens</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="userservice.html#generateusername" class="tsd-kind-icon">generate<wbr>Username</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="userservice.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="userservice.html#getauthdata" class="tsd-kind-icon">get<wbr>Auth<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="userservice.html#getorcreatevaulttoken" class="tsd-kind-icon">get<wbr>OrCreate<wbr>Vault<wbr>Token</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="userservice.html#getuser" class="tsd-kind-icon">get<wbr>User</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="userservice.html#getvaultuser" class="tsd-kind-icon">get<wbr>Vault<wbr>User</a>

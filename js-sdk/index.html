@@ -191,7 +191,7 @@ configureFetch(fetchPolyfill);
 				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { UserService } <span class="hljs-keyword">from</span> <span class="hljs-string">'@meeco/sdk'</span>;
 
 <span class="hljs-keyword">const</span> userService = <span class="hljs-keyword">new</span> UserService(environment);
-<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> userService.get(password, secret);
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> userService.getAuthData(password, secret);
 <span class="hljs-comment">// We have logged the user back in again and have the encryption keys we need</span></code></pre>
 				<a href="#dealing-with-items" id="dealing-with-items" style="color: inherit; text-decoration: none;">
 					<h3>Dealing with Items</h3>
