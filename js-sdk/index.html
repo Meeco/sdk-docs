@@ -211,10 +211,13 @@ configureFetch(fetchPolyfill);
 
 <span class="hljs-keyword">const</span> templateDetails = <span class="hljs-keyword">await</span> service.getTemplate(availableTemplates.item_templates[<span class="hljs-number">0</span>].name);</code></pre>
 				<p>Once we&#39;ve selected a template we can create our first item.</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ItemService } <span class="hljs-keyword">from</span> <span class="hljs-string">'@meeco/sdk'</span>;
-
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ItemService, UserService } <span class="hljs-keyword">from</span> <span class="hljs-string">'@meeco/sdk'</span>;
+<span class="hljs-comment">// Get the user's Auth Data</span>
+<span class="hljs-keyword">const</span> service = <span class="hljs-keyword">new</span> UserService();
+<span class="hljs-keyword">const</span> authData = <span class="hljs-keyword">await</span> userService.getAuthData(password, secret);
+<span class="hljs-comment">// Create the item</span>
 <span class="hljs-keyword">const</span> service = <span class="hljs-keyword">new</span> ItemService(environment);
-<span class="hljs-keyword">const</span> item = <span class="hljs-keyword">await</span> service.create(user.vault_access_token, user.data_encryption_key, {
+<span class="hljs-keyword">const</span> item = <span class="hljs-keyword">await</span> service.create(user.vault_access_token, authData, {
   template_name: availableTemplates.item_templates[<span class="hljs-number">0</span>].name,
   item: {
     label: <span class="hljs-string">'My Car'</span>,
@@ -231,17 +234,15 @@ configureFetch(fetchPolyfill);
   ],
 });</code></pre>
 				<p>We can also fetch a list of a user&#39;s items or get details about a specific item in a manner similar to templates:</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ItemService } <span class="hljs-keyword">from</span> <span class="hljs-string">'@meeco/sdk'</span>;
-
-<span class="hljs-keyword">const</span> service = <span class="hljs-keyword">new</span> ItemService(environment);
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ItemService, UserService } <span class="hljs-keyword">from</span> <span class="hljs-string">'@meeco/sdk'</span>;
+<span class="hljs-comment">// Get the user's Auth Data</span>
+<span class="hljs-keyword">const</span> service = <span class="hljs-keyword">new</span> UserService();
+<span class="hljs-keyword">const</span> authData = <span class="hljs-keyword">await</span> userService.getAuthData(password, secret);
 <span class="hljs-comment">// Get the user's items</span>
+<span class="hljs-keyword">const</span> service = <span class="hljs-keyword">new</span> ItemService(environment);
 <span class="hljs-keyword">const</span> items = <span class="hljs-keyword">await</span> service.list(user.vault_access_token);
 <span class="hljs-comment">// Get more details about a particular item</span>
-<span class="hljs-keyword">const</span> itemDetails = <span class="hljs-keyword">await</span> service.get(
-  items[<span class="hljs-number">0</span>].id,
-  user.vault_access_token,
-  user.data_encryption_key
-);</code></pre>
+<span class="hljs-keyword">const</span> itemDetails = <span class="hljs-keyword">await</span> service.get(items[<span class="hljs-number">0</span>].id, authData);</code></pre>
 				<a href="#connecting-users-and-sharing-data" id="connecting-users-and-sharing-data" style="color: inherit; text-decoration: none;">
 					<h3>Connecting Users and Sharing Data</h3>
 				</a>
