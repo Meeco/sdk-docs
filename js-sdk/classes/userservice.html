@@ -77,7 +77,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">UserService</span>
+						<span class="tsd-signature-type">Service</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UserApi</span><span class="tsd-signature-symbol">&gt;</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">UserService</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -85,15 +90,19 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="userservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="userservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="userservice.html#environment" class="tsd-kind-icon">environment</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="userservice.html#keystoreapifactory" class="tsd-kind-icon">keystoreAPIFactory</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="userservice.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="userservice.html#vaultapifactory" class="tsd-kind-icon">vaultAPIFactory</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="userservice.html#vaultkeypairexternalid" class="tsd-kind-icon">vault<wbr>Keypair<wbr>External<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="userservice.html#vault_pair_external_identifier" class="tsd-kind-icon">VAULT_<wbr>PAIR_<wbr>EXTERNAL_<wbr>IDENTIFIER</a></li>
 							</ul>
@@ -106,28 +115,30 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#deletesessiontokens" class="tsd-kind-icon">delete<wbr>Session<wbr>Tokens</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#generateusername" class="tsd-kind-icon">generate<wbr>Username</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="userservice.html#getapi" class="tsd-kind-icon">getAPI</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#getauthdata" class="tsd-kind-icon">get<wbr>Auth<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#getorcreatevaulttoken" class="tsd-kind-icon">get<wbr>OrCreate<wbr>Vault<wbr>Token</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#getuser" class="tsd-kind-icon">get<wbr>User</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="userservice.html#getvaultuser" class="tsd-kind-icon">get<wbr>Vault<wbr>User</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="userservice.html#setlogger" class="tsd-kind-icon">set<wbr>Logger</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>User<wbr>Service<span class="tsd-signature-symbol">(</span>environment<span class="tsd-signature-symbol">: </span><a href="environment.html" class="tsd-signature-type">Environment</a>, log<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="userservice.html" class="tsd-signature-type">UserService</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>User<wbr>Service<span class="tsd-signature-symbol">(</span>environment<span class="tsd-signature-symbol">: </span><a href="environment.html" class="tsd-signature-type">Environment</a>, log<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Logger</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="userservice.html" class="tsd-signature-type">UserService</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="clienttaskqueueservice.html">ClientTaskQueueService</a>.<a href="clienttaskqueueservice.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L29">packages/sdk/src/services/user-service.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/service.ts#L48">packages/sdk/src/services/service.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -136,7 +147,7 @@
 									<h5>environment: <a href="environment.html" class="tsd-signature-type">Environment</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> log: <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = (msg: string) &#x3D;&gt; {}</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> log: <span class="tsd-signature-type">Logger</span><span class="tsd-signature-symbol"> = noopLogger</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="userservice.html" class="tsd-signature-type">UserService</a></h4>
@@ -146,13 +157,57 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="environment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> environment</h3>
+					<div class="tsd-signature tsd-kind-icon">environment<span class="tsd-signature-symbol">:</span> <a href="environment.html" class="tsd-signature-type">Environment</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="clienttaskqueueservice.html">ClientTaskQueueService</a>.<a href="clienttaskqueueservice.html#environment">environment</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/service.ts#L50">packages/sdk/src/services/service.ts:50</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="keystoreapifactory" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> keystoreAPIFactory</h3>
+					<div class="tsd-signature tsd-kind-icon">keystoreAPIFactory<span class="tsd-signature-symbol">:</span> <a href="../globals.html#keystoreapifactory" class="tsd-signature-type">KeystoreAPIFactory</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="clienttaskqueueservice.html">ClientTaskQueueService</a>.<a href="clienttaskqueueservice.html#keystoreapifactory">keystoreAPIFactory</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/service.ts#L42">packages/sdk/src/services/service.ts:42</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="logger" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IFullLogger</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="clienttaskqueueservice.html">ClientTaskQueueService</a>.<a href="clienttaskqueueservice.html#logger">logger</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/service.ts#L43">packages/sdk/src/services/service.ts:43</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="vaultapifactory" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> vaultAPIFactory</h3>
+					<div class="tsd-signature tsd-kind-icon">vaultAPIFactory<span class="tsd-signature-symbol">:</span> <a href="../globals.html#vaultapifactory" class="tsd-signature-type">VaultAPIFactory</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="clienttaskqueueservice.html">ClientTaskQueueService</a>.<a href="clienttaskqueueservice.html#vaultapifactory">vaultAPIFactory</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/service.ts#L41">packages/sdk/src/services/service.ts:41</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="vaultkeypairexternalid" class="tsd-anchor"></a>
 					<h3>vault<wbr>Keypair<wbr>External<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">vault<wbr>Keypair<wbr>External<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<div class="tsd-signature tsd-kind-icon">vault<wbr>Keypair<wbr>External<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = UserService.VAULT_PAIR_EXTERNAL_IDENTIFIER</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L21">packages/sdk/src/services/user-service.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L16">packages/sdk/src/services/user-service.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -162,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">VAULT_<wbr>PAIR_<wbr>EXTERNAL_<wbr>IDENTIFIER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;auth&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L20">packages/sdk/src/services/user-service.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L15">packages/sdk/src/services/user-service.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L219">packages/sdk/src/services/user-service.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L196">packages/sdk/src/services/user-service.ts:196</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -204,13 +259,13 @@
 					<a name="createkeystoretoken" class="tsd-anchor"></a>
 					<h3>create<wbr>Keystore<wbr>Token</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Keystore<wbr>Token<span class="tsd-signature-symbol">(</span>userPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Keystore<wbr>Token<span class="tsd-signature-symbol">(</span>userPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ikeystoretoken.html" class="tsd-signature-type">IKeystoreToken</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L372">packages/sdk/src/services/user-service.ts:372</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L342">packages/sdk/src/services/user-service.ts:342</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -229,7 +284,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ikeystoretoken.html" class="tsd-signature-type">IKeystoreToken</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -237,13 +292,13 @@
 					<a name="deletesessiontokens" class="tsd-anchor"></a>
 					<h3>delete<wbr>Session<wbr>Tokens</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Session<wbr>Tokens<span class="tsd-signature-symbol">(</span>vaultToken<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, keystoreToken<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Session<wbr>Tokens<span class="tsd-signature-symbol">(</span>vault_access_token<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, keystore_access_token<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L423">packages/sdk/src/services/user-service.ts:423</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L377">packages/sdk/src/services/user-service.ts:377</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,10 +309,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> vaultToken: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> vault_access_token: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> keystoreToken: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> keystore_access_token: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -274,7 +329,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L207">packages/sdk/src/services/user-service.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L184">packages/sdk/src/services/user-service.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -302,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L319">packages/sdk/src/services/user-service.ts:319</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L303">packages/sdk/src/services/user-service.ts:303</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -325,6 +380,30 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getapi" class="tsd-anchor"></a>
+					<h3>getAPI</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">getAPI<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><a href="../interfaces/ivaulttoken.html" class="tsd-signature-type">IVaultToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UserApi</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides Service.getAPI</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L20">packages/sdk/src/services/user-service.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>token: <a href="../interfaces/ivaulttoken.html" class="tsd-signature-type">IVaultToken</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">UserApi</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getauthdata" class="tsd-anchor"></a>
 					<h3>get<wbr>Auth<wbr>Data</h3>
@@ -335,7 +414,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L326">packages/sdk/src/services/user-service.ts:326</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L310">packages/sdk/src/services/user-service.ts:310</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -360,13 +439,13 @@
 					<a name="getorcreatevaulttoken" class="tsd-anchor"></a>
 					<h3>get<wbr>OrCreate<wbr>Vault<wbr>Token</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>OrCreate<wbr>Vault<wbr>Token<span class="tsd-signature-symbol">(</span>userPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>OrCreate<wbr>Vault<wbr>Token<span class="tsd-signature-symbol">(</span>userPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ivaulttoken.html" class="tsd-signature-type">IVaultToken</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L383">packages/sdk/src/services/user-service.ts:383</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L353">packages/sdk/src/services/user-service.ts:353</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -385,7 +464,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ivaulttoken.html" class="tsd-signature-type">IVaultToken</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -393,54 +472,46 @@
 					<a name="getuser" class="tsd-anchor"></a>
 					<h3>get<wbr>User</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>User<span class="tsd-signature-symbol">(</span>vaultAccessToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MeResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>User<span class="tsd-signature-symbol">(</span>credentials<span class="tsd-signature-symbol">: </span><a href="../interfaces/ivaulttoken.html" class="tsd-signature-type">IVaultToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MeResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L416">packages/sdk/src/services/user-service.ts:416</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/user-service.ts#L370">packages/sdk/src/services/user-service.ts:370</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>vaultAccessToken: <span class="tsd-signature-type">string</span></h5>
+									<h5>credentials: <a href="../interfaces/ivaulttoken.html" class="tsd-signature-type">IVaultToken</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MeResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getvaultuser" class="tsd-anchor"></a>
-					<h3>get<wbr>Vault<wbr>User</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Vault<wbr>User<span class="tsd-signature-symbol">(</span>vaultAccessToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MeResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setlogger" class="tsd-anchor"></a>
+					<h3>set<wbr>Logger</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Logger<span class="tsd-signature-symbol">(</span>logger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Logger</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="clienttaskqueueservice.html">ClientTaskQueueService</a>.<a href="clienttaskqueueservice.html#setlogger">setLogger</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/user-service.ts#L412">packages/sdk/src/services/user-service.ts:412</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/service.ts#L56">packages/sdk/src/services/service.ts:56</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>deprecated</dt>
-									<dd><p>Use <a href="userservice.html#getuser">getUser</a> instead.</p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>vaultAccessToken: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
+									<h5>logger: <span class="tsd-signature-type">Logger</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MeResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -461,8 +532,20 @@
 					<li class="current tsd-kind-class">
 						<a href="userservice.html" class="tsd-kind-icon">User<wbr>Service</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 								<a href="userservice.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="userservice.html#environment" class="tsd-kind-icon">environment</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="userservice.html#keystoreapifactory" class="tsd-kind-icon">keystoreAPIFactory</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="userservice.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="userservice.html#vaultapifactory" class="tsd-kind-icon">vaultAPIFactory</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="userservice.html#vaultkeypairexternalid" class="tsd-kind-icon">vault<wbr>Keypair<wbr>External<wbr>Id</a>
@@ -485,6 +568,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="userservice.html#get" class="tsd-kind-icon">get</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="userservice.html#getapi" class="tsd-kind-icon">getAPI</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="userservice.html#getauthdata" class="tsd-kind-icon">get<wbr>Auth<wbr>Data</a>
 							</li>
@@ -494,8 +580,8 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="userservice.html#getuser" class="tsd-kind-icon">get<wbr>User</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="userservice.html#getvaultuser" class="tsd-kind-icon">get<wbr>Vault<wbr>User</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="userservice.html#setlogger" class="tsd-kind-icon">set<wbr>Logger</a>
 							</li>
 						</ul>
 					</li>

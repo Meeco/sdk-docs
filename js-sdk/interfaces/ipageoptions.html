@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>State | Meeco SDK Documentation</title>
+	<title>IPageOptions | Meeco SDK Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,71 +56,64 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="state.html">State</a>
+					<a href="ipageoptions.html">IPageOptions</a>
 				</li>
 			</ul>
-			<h1>Enumeration State</h1>
+			<h1>Interface IPageOptions</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Common interface for GET endpoints which are paginated</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">IPageOptions</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state.html#done" class="tsd-kind-icon">Done</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state.html#failed" class="tsd-kind-icon">Failed</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state.html#inprogress" class="tsd-kind-icon">In<wbr>Progress</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="state.html#todo" class="tsd-kind-icon">Todo</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipageoptions.html#nextpageafter" class="tsd-kind-icon">next<wbr>Page<wbr>After</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipageoptions.html#perpage" class="tsd-kind-icon">per<wbr>Page</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="done" class="tsd-anchor"></a>
-					<h3>Done</h3>
-					<div class="tsd-signature tsd-kind-icon">Done<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;done&quot;</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="nextpageafter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> next<wbr>Page<wbr>After</h3>
+					<div class="tsd-signature tsd-kind-icon">next<wbr>Page<wbr>After<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/client-task-queue-service.ts#L185">packages/sdk/src/services/client-task-queue-service.ts:185</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/service.ts#L13">packages/sdk/src/services/service.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="failed" class="tsd-anchor"></a>
-					<h3>Failed</h3>
-					<div class="tsd-signature tsd-kind-icon">Failed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;failed&quot;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="perpage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> per<wbr>Page</h3>
+					<div class="tsd-signature tsd-kind-icon">per<wbr>Page<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/client-task-queue-service.ts#L186">packages/sdk/src/services/client-task-queue-service.ts:186</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="inprogress" class="tsd-anchor"></a>
-					<h3>In<wbr>Progress</h3>
-					<div class="tsd-signature tsd-kind-icon">In<wbr>Progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;in_progress&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/client-task-queue-service.ts#L184">packages/sdk/src/services/client-task-queue-service.ts:184</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="todo" class="tsd-anchor"></a>
-					<h3>Todo</h3>
-					<div class="tsd-signature tsd-kind-icon">Todo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;todo&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/client-task-queue-service.ts#L183">packages/sdk/src/services/client-task-queue-service.ts:183</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/f6e0c42/packages/sdk/src/services/service.ts#L14">packages/sdk/src/services/service.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -138,20 +131,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum">
-						<a href="state.html" class="tsd-kind-icon">State</a>
+					<li class="current tsd-kind-interface">
+						<a href="ipageoptions.html" class="tsd-kind-icon">IPage<wbr>Options</a>
 						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="state.html#done" class="tsd-kind-icon">Done</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ipageoptions.html#nextpageafter" class="tsd-kind-icon">next<wbr>Page<wbr>After</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="state.html#failed" class="tsd-kind-icon">Failed</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="state.html#inprogress" class="tsd-kind-icon">In<wbr>Progress</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="state.html#todo" class="tsd-kind-icon">Todo</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ipageoptions.html#perpage" class="tsd-kind-icon">per<wbr>Page</a>
 							</li>
 						</ul>
 					</li>

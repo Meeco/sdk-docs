@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MemberRoles | Meeco SDK Documentation</title>
+	<title>ClientTaskQueueGetStateEnum | Meeco SDK Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,16 +56,27 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="memberroles.html">MemberRoles</a>
+					<a href="clienttaskqueuegetstateenum.html">ClientTaskQueueGetStateEnum</a>
 				</li>
 			</ul>
-			<h1>Enumeration MemberRoles</h1>
+			<h1>Enumeration ClientTaskQueueGetStateEnum</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>export</dt>
+						<dd></dd>
+						<dt>enum</dt>
+						<dd><p>{string}</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -73,8 +84,10 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="memberroles.html#admin" class="tsd-kind-icon">Admin</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="memberroles.html#owner" class="tsd-kind-icon">Owner</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="clienttaskqueuegetstateenum.html#done" class="tsd-kind-icon">Done</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="clienttaskqueuegetstateenum.html#failed" class="tsd-kind-icon">Failed</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="clienttaskqueuegetstateenum.html#inprogress" class="tsd-kind-icon">In<wbr>Progress</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="clienttaskqueuegetstateenum.html#todo" class="tsd-kind-icon">Todo</a></li>
 							</ul>
 						</section>
 					</div>
@@ -83,22 +96,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="admin" class="tsd-anchor"></a>
-					<h3>Admin</h3>
-					<div class="tsd-signature tsd-kind-icon">Admin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;admin&quot;</span></div>
+					<a name="done" class="tsd-anchor"></a>
+					<h3>Done</h3>
+					<div class="tsd-signature tsd-kind-icon">Done<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;done&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/organizations-service.ts#L53">packages/sdk/src/services/organizations-service.ts:53</a></li>
+							<li>Defined in node_modules/@meeco/vault-api-sdk/lib/types/apis/ClientTaskQueueApi.d.ts:57</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="owner" class="tsd-anchor"></a>
-					<h3>Owner</h3>
-					<div class="tsd-signature tsd-kind-icon">Owner<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;owner&quot;</span></div>
+					<a name="failed" class="tsd-anchor"></a>
+					<h3>Failed</h3>
+					<div class="tsd-signature tsd-kind-icon">Failed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;failed&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/27f37c1/packages/sdk/src/services/organizations-service.ts#L54">packages/sdk/src/services/organizations-service.ts:54</a></li>
+							<li>Defined in node_modules/@meeco/vault-api-sdk/lib/types/apis/ClientTaskQueueApi.d.ts:58</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="inprogress" class="tsd-anchor"></a>
+					<h3>In<wbr>Progress</h3>
+					<div class="tsd-signature tsd-kind-icon">In<wbr>Progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;in_progress&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@meeco/vault-api-sdk/lib/types/apis/ClientTaskQueueApi.d.ts:56</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="todo" class="tsd-anchor"></a>
+					<h3>Todo</h3>
+					<div class="tsd-signature tsd-kind-icon">Todo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;todo&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@meeco/vault-api-sdk/lib/types/apis/ClientTaskQueueApi.d.ts:55</li>
 						</ul>
 					</aside>
 				</section>
@@ -117,13 +150,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="memberroles.html" class="tsd-kind-icon">Member<wbr>Roles</a>
+						<a href="clienttaskqueuegetstateenum.html" class="tsd-kind-icon">Client<wbr>Task<wbr>Queue<wbr>Get<wbr>State<wbr>Enum</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="memberroles.html#admin" class="tsd-kind-icon">Admin</a>
+								<a href="clienttaskqueuegetstateenum.html#done" class="tsd-kind-icon">Done</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="memberroles.html#owner" class="tsd-kind-icon">Owner</a>
+								<a href="clienttaskqueuegetstateenum.html#failed" class="tsd-kind-icon">Failed</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="clienttaskqueuegetstateenum.html#inprogress" class="tsd-kind-icon">In<wbr>Progress</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="clienttaskqueuegetstateenum.html#todo" class="tsd-kind-icon">Todo</a>
 							</li>
 						</ul>
 					</li>
