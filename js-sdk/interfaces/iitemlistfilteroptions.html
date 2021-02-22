@@ -73,16 +73,23 @@
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>param</dt>
-						<dd><p>string array of item template ids</p>
+						<dd><p>array of item template ids</p>
 						</dd>
 						<dt>param</dt>
 						<dd><p>name of item scheme</p>
 						</dd>
 						<dt>param</dt>
-						<dd><p>string array of item classification node names e.g. pets, vehicle</p>
+						<dd><p>array of item classification names e.g. pets, vehicle</p>
 						</dd>
 						<dt>param</dt>
-						<dd><p>user Id. item shared with provided user id. Works for items owned by the current user as well as for items owned by someone else and on-shared by the current user.</p>
+						<dd><p>user Id. item shared with provided user id.
+							Works for items owned by the current user as well as for items owned by someone else and on-shared by the current user.</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>only return Items created by the given user id.</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>only return Items you created.</p>
 						</dd>
 					</dl>
 				</div>
@@ -102,10 +109,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iitemlistfilteroptions.html#classification" class="tsd-kind-icon">classification</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iitemlistfilteroptions.html#classifications" class="tsd-kind-icon">classifications</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iitemlistfilteroptions.html#own" class="tsd-kind-icon">own</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iitemlistfilteroptions.html#ownerid" class="tsd-kind-icon">owner<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iitemlistfilteroptions.html#scheme" class="tsd-kind-icon">scheme</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iitemlistfilteroptions.html#sharedwith" class="tsd-kind-icon">shared<wbr>With</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iitemlistfilteroptions.html#templateid" class="tsd-kind-icon">template<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iitemlistfilteroptions.html#templateids" class="tsd-kind-icon">template<wbr>Ids</a></li>
 							</ul>
 						</section>
 					</div>
@@ -114,12 +123,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="classification" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> classification</h3>
-					<div class="tsd-signature tsd-kind-icon">classification<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="classifications" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> classifications</h3>
+					<div class="tsd-signature tsd-kind-icon">classifications<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/463693f/packages/sdk/src/services/item-service.ts#L21">packages/sdk/src/services/item-service.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/37cf132/packages/sdk/src/services/item-service.ts#L24">packages/sdk/src/services/item-service.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="own" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> own</h3>
+					<div class="tsd-signature tsd-kind-icon">own<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/37cf132/packages/sdk/src/services/item-service.ts#L27">packages/sdk/src/services/item-service.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ownerid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> owner<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">owner<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/37cf132/packages/sdk/src/services/item-service.ts#L26">packages/sdk/src/services/item-service.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,7 +158,7 @@
 					<div class="tsd-signature tsd-kind-icon">scheme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/463693f/packages/sdk/src/services/item-service.ts#L20">packages/sdk/src/services/item-service.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/37cf132/packages/sdk/src/services/item-service.ts#L23">packages/sdk/src/services/item-service.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -139,17 +168,17 @@
 					<div class="tsd-signature tsd-kind-icon">shared<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/463693f/packages/sdk/src/services/item-service.ts#L22">packages/sdk/src/services/item-service.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/37cf132/packages/sdk/src/services/item-service.ts#L25">packages/sdk/src/services/item-service.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="templateid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> template<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">template<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="templateids" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> template<wbr>Ids</h3>
+					<div class="tsd-signature tsd-kind-icon">template<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/463693f/packages/sdk/src/services/item-service.ts#L19">packages/sdk/src/services/item-service.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/37cf132/packages/sdk/src/services/item-service.ts#L22">packages/sdk/src/services/item-service.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -171,7 +200,13 @@
 						<a href="iitemlistfilteroptions.html" class="tsd-kind-icon">IItem<wbr>List<wbr>Filter<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="iitemlistfilteroptions.html#classification" class="tsd-kind-icon">classification</a>
+								<a href="iitemlistfilteroptions.html#classifications" class="tsd-kind-icon">classifications</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iitemlistfilteroptions.html#own" class="tsd-kind-icon">own</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iitemlistfilteroptions.html#ownerid" class="tsd-kind-icon">owner<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="iitemlistfilteroptions.html#scheme" class="tsd-kind-icon">scheme</a>
@@ -180,7 +215,7 @@
 								<a href="iitemlistfilteroptions.html#sharedwith" class="tsd-kind-icon">shared<wbr>With</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="iitemlistfilteroptions.html#templateid" class="tsd-kind-icon">template<wbr>Id</a>
+								<a href="iitemlistfilteroptions.html#templateids" class="tsd-kind-icon">template<wbr>Ids</a>
 							</li>
 						</ul>
 					</li>
