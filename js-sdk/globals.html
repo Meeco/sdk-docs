@@ -131,11 +131,13 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="globals.html#decrypteditems" class="tsd-kind-icon">Decrypted<wbr>Items</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#keystoreapifactory" class="tsd-kind-icon">KeystoreAPIFactory</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#keystoreapifactoryinstance" class="tsd-kind-icon">KeystoreAPIFactory<wbr>Instance</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#minimalslot" class="tsd-kind-icon">Minimal<wbr>Slot</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#newslot" class="tsd-kind-icon">New<wbr>Slot</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#sdkdecryptedslot" class="tsd-kind-icon">SDKDecrypted<wbr>Slot</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#sdkitemsresponse" class="tsd-kind-icon">SDKItems<wbr>Response</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#slotattributes" class="tsd-kind-icon">Slot<wbr>Attributes</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#vaultapifactory" class="tsd-kind-icon">VaultAPIFactory</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#vaultapifactoryinstance" class="tsd-kind-icon">VaultAPIFactory<wbr>Instance</a></li>
@@ -184,12 +186,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="decrypteditems" class="tsd-anchor"></a>
+					<h3>Decrypted<wbr>Items</h3>
+					<div class="tsd-signature tsd-kind-icon">Decrypted<wbr>Items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#sdkitemsresponse" class="tsd-signature-type">SDKItemsResponse</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"meta"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"next_page_after"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>items<span class="tsd-signature-symbol">: </span><a href="classes/decrypteditem.html" class="tsd-signature-type">DecryptedItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/services/item-service.ts#L34">packages/sdk/src/services/item-service.ts:34</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>DecryptedItems together with response metadata if needed for paging etc.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="keystoreapifactory" class="tsd-anchor"></a>
 					<h3>KeystoreAPIFactory</h3>
 					<div class="tsd-signature tsd-kind-icon">KeystoreAPIFactory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>userAuth<span class="tsd-signature-symbol">: </span><a href="interfaces/ikeystoretoken.html" class="tsd-signature-type">IKeystoreToken</a>, headers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IHeaders</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="globals.html#keystoreapifactoryinstance" class="tsd-signature-type">KeystoreAPIFactoryInstance</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/api-factory.ts#L208">packages/sdk/src/util/api-factory.ts:208</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/api-factory.ts#L208">packages/sdk/src/util/api-factory.ts:208</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -243,7 +260,7 @@ forUser.KeypairApi.getConnections();
 					<div class="tsd-signature tsd-kind-icon">KeystoreAPIFactory<wbr>Instance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/api-factory.ts#L212">packages/sdk/src/util/api-factory.ts:212</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/api-factory.ts#L212">packages/sdk/src/util/api-factory.ts:212</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -258,7 +275,7 @@ forUser.KeypairApi.getConnections();
 					<div class="tsd-signature tsd-kind-icon">Minimal<wbr>Slot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/models/slot-types.ts#L35">packages/sdk/src/models/slot-types.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/models/slot-types.ts#L35">packages/sdk/src/models/slot-types.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -273,7 +290,7 @@ forUser.KeypairApi.getConnections();
 					<div class="tsd-signature tsd-kind-icon">New<wbr>Slot<span class="tsd-signature-symbol">:</span> <a href="globals.html#minimalslot" class="tsd-signature-type">MinimalSlot</a><span class="tsd-signature-symbol"> &amp; </span><a href="globals.html#slotattributes" class="tsd-signature-type">SlotAttributes</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/models/slot-types.ts#L40">packages/sdk/src/models/slot-types.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/models/slot-types.ts#L40">packages/sdk/src/models/slot-types.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -283,7 +300,7 @@ forUser.KeypairApi.getConnections();
 					<div class="tsd-signature tsd-kind-icon">SDKDecrypted<wbr>Slot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Slot</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"encrypted_value"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"encrypted_value_verification_key"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>value_verification_key<span class="tsd-signature-symbol">: </span><a href="classes/symmetrickey.html" class="tsd-signature-type">SymmetricKey</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/models/slot-types.ts#L8">packages/sdk/src/models/slot-types.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/models/slot-types.ts#L8">packages/sdk/src/models/slot-types.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -294,12 +311,27 @@ forUser.KeypairApi.getConnections();
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="sdkitemsresponse" class="tsd-anchor"></a>
+					<h3>SDKItems<wbr>Response</h3>
+					<div class="tsd-signature tsd-kind-icon">SDKItems<wbr>Response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ItemsResponse1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/services/item-service.ts#L31">packages/sdk/src/services/item-service.ts:31</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Quick fix for overloaded swagger type.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="slotattributes" class="tsd-anchor"></a>
 					<h3>Slot<wbr>Attributes</h3>
 					<div class="tsd-signature tsd-kind-icon">Slot<wbr>Attributes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">NestedSlotAttributes</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"name"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"label"</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/models/slot-types.ts#L38">packages/sdk/src/models/slot-types.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/models/slot-types.ts#L38">packages/sdk/src/models/slot-types.ts:38</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -314,7 +346,7 @@ forUser.KeypairApi.getConnections();
 					<div class="tsd-signature tsd-kind-icon">VaultAPIFactory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>userAuth<span class="tsd-signature-symbol">: </span><a href="interfaces/ivaulttoken.html" class="tsd-signature-type">IVaultToken</a>, headers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IHeaders</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="globals.html#vaultapifactoryinstance" class="tsd-signature-type">VaultAPIFactoryInstance</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/api-factory.ts#L242">packages/sdk/src/util/api-factory.ts:242</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/api-factory.ts#L242">packages/sdk/src/util/api-factory.ts:242</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -368,7 +400,7 @@ forUser.ConnectionAPI.getConnections();
 					<div class="tsd-signature tsd-kind-icon">VaultAPIFactory<wbr>Instance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/api-factory.ts#L246">packages/sdk/src/util/api-factory.ts:246</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/api-factory.ts#L246">packages/sdk/src/util/api-factory.ts:246</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -386,7 +418,7 @@ forUser.ConnectionAPI.getConnections();
 					<div class="tsd-signature tsd-kind-icon">SYMMETRIC_<wbr>KEY_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> = 32</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/models/symmetric-key.ts#L4">packages/sdk/src/models/symmetric-key.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/models/symmetric-key.ts#L4">packages/sdk/src/models/symmetric-key.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -396,7 +428,7 @@ forUser.ConnectionAPI.getConnections();
 					<div class="tsd-signature tsd-kind-icon">VALUE_<wbr>VERIFICATION_<wbr>KEY_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">64</span><span class="tsd-signature-symbol"> = 64</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/value-verification.ts#L4">packages/sdk/src/util/value-verification.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/value-verification.ts#L4">packages/sdk/src/util/value-verification.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -406,7 +438,7 @@ forUser.ConnectionAPI.getConnections();
 					<div class="tsd-signature tsd-kind-icon">_cryppo<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;/home/runner/work/js-sdk/js-sdk/node_modules/@meeco/cryppo/dist/src/index&quot;</span><span class="tsd-signature-symbol"> = _cryppo</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/index.ts#L41">packages/sdk/src/index.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/index.ts#L41">packages/sdk/src/index.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -423,7 +455,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/api-factory.ts#L15">packages/sdk/src/util/api-factory.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/api-factory.ts#L15">packages/sdk/src/util/api-factory.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -451,7 +483,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/find-connection-between.ts#L19">packages/sdk/src/util/find-connection-between.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/find-connection-between.ts#L19">packages/sdk/src/util/find-connection-between.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -508,7 +540,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/find-connection-between.ts#L9">packages/sdk/src/util/find-connection-between.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/find-connection-between.ts#L9">packages/sdk/src/util/find-connection-between.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -568,7 +600,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/paged.ts#L34">packages/sdk/src/util/paged.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/paged.ts#L34">packages/sdk/src/util/paged.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -626,7 +658,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/models/item-map.ts#L8">packages/sdk/src/models/item-map.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/models/item-map.ts#L8">packages/sdk/src/models/item-map.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -669,7 +701,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/api-factory.ts#L252">packages/sdk/src/util/api-factory.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/api-factory.ts#L252">packages/sdk/src/util/api-factory.ts:252</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -698,7 +730,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/value-verification.ts#L6">packages/sdk/src/util/value-verification.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/value-verification.ts#L6">packages/sdk/src/util/value-verification.ts:6</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="classes/symmetrickey.html" class="tsd-signature-type">SymmetricKey</a></h4>
@@ -715,7 +747,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/paged.ts#L59">packages/sdk/src/util/paged.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/paged.ts#L59">packages/sdk/src/util/paged.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -772,7 +804,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/paged.ts#L111">packages/sdk/src/util/paged.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/paged.ts#L111">packages/sdk/src/util/paged.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -808,7 +840,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/paged.ts#L119">packages/sdk/src/util/paged.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/paged.ts#L119">packages/sdk/src/util/paged.ts:119</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -843,7 +875,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/paged.ts#L123">packages/sdk/src/util/paged.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/paged.ts#L123">packages/sdk/src/util/paged.ts:123</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -872,7 +904,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/paged.ts#L16">packages/sdk/src/util/paged.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/paged.ts#L16">packages/sdk/src/util/paged.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -895,7 +927,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/transformers.ts#L47">packages/sdk/src/util/transformers.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/transformers.ts#L47">packages/sdk/src/util/transformers.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -924,7 +956,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/transformers.ts#L14">packages/sdk/src/util/transformers.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/transformers.ts#L14">packages/sdk/src/util/transformers.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -947,7 +979,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/transformers.ts#L23">packages/sdk/src/util/transformers.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/transformers.ts#L23">packages/sdk/src/util/transformers.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -973,7 +1005,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/value-verification.ts#L15">packages/sdk/src/util/value-verification.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/value-verification.ts#L15">packages/sdk/src/util/value-verification.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1010,7 +1042,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/api-factory.ts#L269">packages/sdk/src/util/api-factory.ts:269</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/api-factory.ts#L269">packages/sdk/src/util/api-factory.ts:269</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1039,7 +1071,7 @@ forUser.ConnectionAPI.getConnections();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/util/value-verification.ts#L19">packages/sdk/src/util/value-verification.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/util/value-verification.ts#L19">packages/sdk/src/util/value-verification.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1067,7 +1099,7 @@ forUser.ConnectionAPI.getConnections();
 					<div class="tsd-signature tsd-kind-icon">ERROR_<wbr>CODES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/models/service-error.ts#L1">packages/sdk/src/models/service-error.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/models/service-error.ts#L1">packages/sdk/src/models/service-error.ts:1</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -1076,7 +1108,7 @@ forUser.ConnectionAPI.getConnections();
 						<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Secret<wbr>Format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;INVALID_SECRET_FORMAT&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/models/service-error.ts#L2">packages/sdk/src/models/service-error.ts:2</a></li>
+								<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/models/service-error.ts#L2">packages/sdk/src/models/service-error.ts:2</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1086,7 +1118,7 @@ forUser.ConnectionAPI.getConnections();
 						<div class="tsd-signature tsd-kind-icon">Login<wbr>Failed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;LOGIN_FAILED&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/953b2ea/packages/sdk/src/models/service-error.ts#L3">packages/sdk/src/models/service-error.ts:3</a></li>
+								<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/53be31a/packages/sdk/src/models/service-error.ts#L3">packages/sdk/src/models/service-error.ts:3</a></li>
 							</ul>
 						</aside>
 					</section>
