@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AcceptanceStatus | Meeco SDK Documentation</title>
+	<title>ClientTaskState | Meeco SDK Documentation</title>
 	<meta name="description" content="Documentation for Meeco SDK Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">Meeco SDK Documentation</a>
 				</li>
 				<li>
-					<a href="acceptancestatus.html">AcceptanceStatus</a>
+					<a href="clienttaskstate.html">ClientTaskState</a>
 				</li>
 			</ul>
-			<h1>Enumeration AcceptanceStatus</h1>
+			<h1>Enumeration ClientTaskState</h1>
 		</div>
 	</div>
 </header>
@@ -67,66 +67,67 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The result of an API call</p>
-					</div>
+					<dl class="tsd-comment-tags">
+						<dt>export</dt>
+						<dd></dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-external">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="acceptancestatus.html#accepted" class="tsd-kind-icon">Accepted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="acceptancestatus.html#notrequired" class="tsd-kind-icon">Not<wbr>Required</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="acceptancestatus.html#rejected" class="tsd-kind-icon">Rejected</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="acceptancestatus.html#required" class="tsd-kind-icon">Required</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="clienttaskstate.html#done" class="tsd-kind-icon">Done</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="clienttaskstate.html#failed" class="tsd-kind-icon">Failed</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="clienttaskstate.html#inprogress" class="tsd-kind-icon">In<wbr>Progress</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="clienttaskstate.html#todo" class="tsd-kind-icon">Todo</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="accepted" class="tsd-anchor"></a>
-					<h3>Accepted</h3>
-					<div class="tsd-signature tsd-kind-icon">Accepted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;accepted&quot;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+					<a name="done" class="tsd-anchor"></a>
+					<h3>Done</h3>
+					<div class="tsd-signature tsd-kind-icon">Done<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;done&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/services/share-service.ts#L34">packages/sdk/src/services/share-service.ts:34</a></li>
+							<li>Defined in node_modules/@meeco/vault-api-sdk/lib/types/apis/ClientTaskQueueApi.d.ts:57</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="notrequired" class="tsd-anchor"></a>
-					<h3>Not<wbr>Required</h3>
-					<div class="tsd-signature tsd-kind-icon">Not<wbr>Required<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;acceptance_not_required&quot;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+					<a name="failed" class="tsd-anchor"></a>
+					<h3>Failed</h3>
+					<div class="tsd-signature tsd-kind-icon">Failed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;failed&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/services/share-service.ts#L33">packages/sdk/src/services/share-service.ts:33</a></li>
+							<li>Defined in node_modules/@meeco/vault-api-sdk/lib/types/apis/ClientTaskQueueApi.d.ts:58</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="rejected" class="tsd-anchor"></a>
-					<h3>Rejected</h3>
-					<div class="tsd-signature tsd-kind-icon">Rejected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;rejected &quot;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+					<a name="inprogress" class="tsd-anchor"></a>
+					<h3>In<wbr>Progress</h3>
+					<div class="tsd-signature tsd-kind-icon">In<wbr>Progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;in_progress&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/services/share-service.ts#L35">packages/sdk/src/services/share-service.ts:35</a></li>
+							<li>Defined in node_modules/@meeco/vault-api-sdk/lib/types/apis/ClientTaskQueueApi.d.ts:56</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="required" class="tsd-anchor"></a>
-					<h3>Required</h3>
-					<div class="tsd-signature tsd-kind-icon">Required<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;acceptance_required&quot;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+					<a name="todo" class="tsd-anchor"></a>
+					<h3>Todo</h3>
+					<div class="tsd-signature tsd-kind-icon">Todo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;todo&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/services/share-service.ts#L32">packages/sdk/src/services/share-service.ts:32</a></li>
+							<li>Defined in node_modules/@meeco/vault-api-sdk/lib/types/apis/ClientTaskQueueApi.d.ts:55</li>
 						</ul>
 					</aside>
 				</section>
@@ -144,20 +145,20 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum">
-						<a href="acceptancestatus.html" class="tsd-kind-icon">Acceptance<wbr>Status</a>
+					<li class="current tsd-kind-enum tsd-is-external">
+						<a href="clienttaskstate.html" class="tsd-kind-icon">Client<wbr>Task<wbr>State</a>
 						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="acceptancestatus.html#accepted" class="tsd-kind-icon">Accepted</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+								<a href="clienttaskstate.html#done" class="tsd-kind-icon">Done</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="acceptancestatus.html#notrequired" class="tsd-kind-icon">Not<wbr>Required</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+								<a href="clienttaskstate.html#failed" class="tsd-kind-icon">Failed</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="acceptancestatus.html#rejected" class="tsd-kind-icon">Rejected</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+								<a href="clienttaskstate.html#inprogress" class="tsd-kind-icon">In<wbr>Progress</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="acceptancestatus.html#required" class="tsd-kind-icon">Required</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+								<a href="clienttaskstate.html#todo" class="tsd-kind-icon">Todo</a>
 							</li>
 						</ul>
 					</li>
