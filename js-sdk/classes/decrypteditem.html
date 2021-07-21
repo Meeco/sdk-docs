@@ -69,12 +69,10 @@
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>Wraps Items returned from the API that have been decrypted, usually by <a href="itemservice.html">ItemService</a>.
-						If <code>associations</code>, <code>classification_nodes</code>, <code>thumbnails</code> and <code>attachments</code>are provided at construction, they are stored.</p>
+						If <code>classification_nodes</code>, <code>thumbnails</code> and <code>attachments</code>are provided at construction, they are stored.</p>
 					</div>
 					<p><code>DecryptedItem</code> is immutable, you should use <a href="decrypteditem.html#toitemupdate">toItemUpdate</a> to stage modifications.</p>
-					<p>Note that when using <a href="decrypteditem.html#fromapi">fromAPI</a> to construct a <a href="decrypteditem.html">DecryptedItem</a> <a href="decrypteditem.html#classification_nodes">classification_nodes</a>, <a href="decrypteditem.html#associations_to">associations_to</a> and
-						<a href="decrypteditem.html#associations">associations</a> are filtered to just those that concern the Item.
-					<a href="decrypteditem.html#thumbnails">thumbnails</a> and <a href="decrypteditem.html#attachments">attachments</a> are NOT filtered; they may contain extra attachments not used by the Item.</p>
+					<p><a href="decrypteditem.html#thumbnails">thumbnails</a> and <a href="decrypteditem.html#attachments">attachments</a> are NOT filtered; they may contain extra attachments not used by the Item.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -103,8 +101,6 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="decrypteditem.html#associations" class="tsd-kind-icon">associations</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="decrypteditem.html#associations_to" class="tsd-kind-icon">associations_<wbr>to</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="decrypteditem.html#attachments" class="tsd-kind-icon">attachments</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="decrypteditem.html#classification_nodes" class="tsd-kind-icon">classification_<wbr>nodes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="decrypteditem.html#description" class="tsd-kind-icon">description</a></li>
@@ -150,14 +146,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Decrypted<wbr>Item<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span>, slots<span class="tsd-signature-symbol">?: </span><a href="../modules.html#sdkdecryptedslot" class="tsd-signature-type" data-tsd-kind="Type alias">SDKDecryptedSlot</a><span class="tsd-signature-symbol">[]</span>, extra<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>associations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Association</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>associations_to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Association</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>attachments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Attachment</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>classification_nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClassificationNode</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>thumbnails<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Thumbnail</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="decrypteditem.html" class="tsd-signature-type" data-tsd-kind="Class">DecryptedItem</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Decrypted<wbr>Item<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Item</span>, slots<span class="tsd-signature-symbol">?: </span><a href="../modules.html#sdkdecryptedslot" class="tsd-signature-type" data-tsd-kind="Type alias">SDKDecryptedSlot</a><span class="tsd-signature-symbol">[]</span>, extra<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>attachments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Attachment</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>classification_nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClassificationNode</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>thumbnails<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Thumbnail</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="decrypteditem.html" class="tsd-signature-type" data-tsd-kind="Class">DecryptedItem</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides ItemMap&lt;SDKDecryptedSlot&gt;.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L61">packages/sdk/src/models/decrypted-item.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L56">packages/sdk/src/models/decrypted-item.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -166,10 +162,10 @@
 									<h5>item: <span class="tsd-signature-type">Item</span></h5>
 								</li>
 								<li>
-									<h5>slots: <a href="../modules.html#sdkdecryptedslot" class="tsd-signature-type" data-tsd-kind="Type alias">SDKDecryptedSlot</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></h5>
+									<h5>slots: <a href="../modules.html#sdkdecryptedslot" class="tsd-signature-type" data-tsd-kind="Type alias">SDKDecryptedSlot</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
 								</li>
 								<li>
-									<h5>extra: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>associations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Association</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>associations_to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Association</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>attachments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Attachment</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>classification_nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClassificationNode</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>thumbnails<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Thumbnail</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></h5>
+									<h5>extra: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>attachments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Attachment</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>classification_nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClassificationNode</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>thumbnails<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Thumbnail</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = {}</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="decrypteditem.html" class="tsd-signature-type" data-tsd-kind="Class">DecryptedItem</a></h4>
@@ -180,32 +176,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="associations" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> associations</h3>
-					<div class="tsd-signature tsd-kind-icon">associations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Association</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L42">packages/sdk/src/models/decrypted-item.ts:42</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="associations_to" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> associations_<wbr>to</h3>
-					<div class="tsd-signature tsd-kind-icon">associations_<wbr>to<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Association</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L43">packages/sdk/src/models/decrypted-item.ts:43</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="attachments" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> attachments</h3>
 					<div class="tsd-signature tsd-kind-icon">attachments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Attachment</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L44">packages/sdk/src/models/decrypted-item.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L39">packages/sdk/src/models/decrypted-item.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,7 +191,7 @@
 					<div class="tsd-signature tsd-kind-icon">classification_<wbr>nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ClassificationNode</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L53">packages/sdk/src/models/decrypted-item.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L48">packages/sdk/src/models/decrypted-item.ts:48</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -231,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L36">packages/sdk/src/models/decrypted-item.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L33">packages/sdk/src/models/decrypted-item.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L32">packages/sdk/src/models/decrypted-item.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L29">packages/sdk/src/models/decrypted-item.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Item</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L47">packages/sdk/src/models/decrypted-item.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L42">packages/sdk/src/models/decrypted-item.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -266,7 +242,7 @@
 					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L35">packages/sdk/src/models/decrypted-item.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L32">packages/sdk/src/models/decrypted-item.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -276,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L34">packages/sdk/src/models/decrypted-item.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L31">packages/sdk/src/models/decrypted-item.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -286,7 +262,7 @@
 					<div class="tsd-signature tsd-kind-icon">original_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L37">packages/sdk/src/models/decrypted-item.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L34">packages/sdk/src/models/decrypted-item.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -296,7 +272,7 @@
 					<div class="tsd-signature tsd-kind-icon">own<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L33">packages/sdk/src/models/decrypted-item.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L30">packages/sdk/src/models/decrypted-item.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -306,7 +282,7 @@
 					<div class="tsd-signature tsd-kind-icon">owner_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L38">packages/sdk/src/models/decrypted-item.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L35">packages/sdk/src/models/decrypted-item.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -316,7 +292,7 @@
 					<div class="tsd-signature tsd-kind-icon">share_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L39">packages/sdk/src/models/decrypted-item.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L36">packages/sdk/src/models/decrypted-item.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -334,7 +310,7 @@
 					<div class="tsd-signature tsd-kind-icon">thumbnails<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Thumbnail</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L41">packages/sdk/src/models/decrypted-item.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L38">packages/sdk/src/models/decrypted-item.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -344,7 +320,7 @@
 					<div class="tsd-signature tsd-kind-icon">cryppo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L29">packages/sdk/src/models/decrypted-item.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L26">packages/sdk/src/models/decrypted-item.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -361,7 +337,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/item-map.ts#L36">packages/sdk/src/models/item-map.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/item-map.ts#L36">packages/sdk/src/models/item-map.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -383,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/item-map.ts#L43">packages/sdk/src/models/item-map.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/item-map.ts#L43">packages/sdk/src/models/item-map.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +384,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L111">packages/sdk/src/models/decrypted-item.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L101">packages/sdk/src/models/decrypted-item.ts:101</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -431,7 +407,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L119">packages/sdk/src/models/decrypted-item.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L109">packages/sdk/src/models/decrypted-item.ts:109</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -454,7 +430,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L102">packages/sdk/src/models/decrypted-item.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L92">packages/sdk/src/models/decrypted-item.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -476,7 +452,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L107">packages/sdk/src/models/decrypted-item.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L97">packages/sdk/src/models/decrypted-item.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,7 +474,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L174">packages/sdk/src/models/decrypted-item.ts:174</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L164">packages/sdk/src/models/decrypted-item.ts:164</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -521,7 +497,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L129">packages/sdk/src/models/decrypted-item.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L119">packages/sdk/src/models/decrypted-item.ts:119</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -550,7 +526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L144">packages/sdk/src/models/decrypted-item.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L134">packages/sdk/src/models/decrypted-item.ts:134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -583,7 +559,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/17d7280/packages/sdk/src/models/decrypted-item.ts#L58">packages/sdk/src/models/decrypted-item.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/Meeco/js-sdk/blob/d0e70e1/packages/sdk/src/models/decrypted-item.ts#L53">packages/sdk/src/models/decrypted-item.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -618,12 +594,6 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="decrypteditem.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="decrypteditem.html#associations" class="tsd-kind-icon">associations</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="decrypteditem.html#associations_to" class="tsd-kind-icon">associations_<wbr>to</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="decrypteditem.html#attachments" class="tsd-kind-icon">attachments</a>
