@@ -65,7 +65,7 @@
 				<a href="#api-docs" id="api-docs" style="color: inherit; text-decoration: none;">
 					<h3>API Docs</h3>
 				</a>
-				<p>For SDK API Docs (TypeDoc docs) <a href="https://meeco.github.io/js-sdk/">See Here</a></p>
+				<p>For SDK API Docs (TypeDoc docs) <a href="https://meeco.github.io/sdk-docs/">See Here</a></p>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
@@ -97,7 +97,7 @@
 				<a href="#usage-basics" id="usage-basics" style="color: inherit; text-decoration: none;">
 					<h2>Usage Basics</h2>
 				</a>
-				<p>This is not an exhaustive list of functionality - just some basic use-cases. For full usage <a href="https://meeco.github.io/js-sdk/">see the API docs</a></p>
+				<p>This is not an exhaustive list of functionality - just some basic use-cases. For full usage <a href="https://meeco.github.io/sdk-docs/">see the API docs</a></p>
 				<p>All examples expect you have your environment configured.</p>
 				<p>An environment configuration looks something like this:</p>
 				<pre><code class="language-js"><span style="color: #008000">// Note this can also be an instance of Environment from `@meeco/sdk` for type safety</span>
@@ -223,17 +223,16 @@
 <span style="color: #008000">// Create the item</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">service</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">ItemService</span><span style="color: #000000">(</span><span style="color: #001080">environment</span><span style="color: #000000">);</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">selectedTemplate</span><span style="color: #000000"> = </span><span style="color: #001080">availableTemplates</span><span style="color: #000000">.</span><span style="color: #001080">item_templates</span><span style="color: #000000">[</span><span style="color: #098658">0</span><span style="color: #000000">];</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">newItem</span><span style="color: #000000"> =</span>
-<span style="color: #000000">    </span><span style="color: #001080">NewItem</span><span style="color: #000000">.</span><span style="color: #795E26">fromTemplate</span><span style="color: #000000">(</span><span style="color: #001080">selectedTemplate</span><span style="color: #000000">, </span><span style="color: #001080">selectedTemplate</span><span style="color: #000000">.</span><span style="color: #001080">slots</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;My Car&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">                         [{</span>
-<span style="color: #000000">                             </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;make_model&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">                             </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Ford Focus&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">                         },</span>
-<span style="color: #000000">                          {</span>
-<span style="color: #000000">                             </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;year&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">                             </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;2017&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">                         }],</span>
-<span style="color: #000000">                        );</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">newItem</span><span style="color: #000000"> = </span><span style="color: #001080">NewItem</span><span style="color: #000000">.</span><span style="color: #795E26">fromTemplate</span><span style="color: #000000">(</span><span style="color: #001080">selectedTemplate</span><span style="color: #000000">, </span><span style="color: #001080">selectedTemplate</span><span style="color: #000000">.</span><span style="color: #001080">slots</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;My Car&#039;</span><span style="color: #000000">, [</span>
+<span style="color: #000000">  {</span>
+<span style="color: #000000">    </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;make_model&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Ford Focus&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  },</span>
+<span style="color: #000000">  {</span>
+<span style="color: #000000">    </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;year&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;2017&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  },</span>
+<span style="color: #000000">]);</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">item</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">service</span><span style="color: #000000">.</span><span style="color: #795E26">create</span><span style="color: #000000">(</span><span style="color: #001080">user</span><span style="color: #000000">.</span><span style="color: #001080">vault_access_token</span><span style="color: #000000">, </span><span style="color: #001080">authData</span><span style="color: #000000">, </span><span style="color: #001080">newItem</span><span style="color: #000000">);</span>
 </code></pre>
 				<p><code>NewItem</code> is a wrapper class that helps with the staging of a new created Item. It provides helpful commands
